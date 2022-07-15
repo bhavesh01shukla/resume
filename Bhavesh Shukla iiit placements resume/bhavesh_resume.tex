@@ -1,0 +1,308 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{Black}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{Black}
+\colorlet{heading}{Black}
+\colorlet{headingrule}{Black}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{Black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{Black}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Bhavesh Shukla}
+\tagline{ CSE Undergrad at IIIT Hyderabad }
+\personalinfo{%
+    \email{shuklabhavesh01@gmail.com}
+    % \email{bhavesh.shukla@students.iiit.ac.in}
+    \phone{+91 8839061860}
+    \linkedin{bhaveshshukla01}
+    \github{bhavesh01shukla} 
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.615}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Education}
+
+\cvevent{B. Tech. in Computer Science and Engineering}{International Institute of Information Technology, Hyderabad (IIITH) }{July 2018 -- May 2022} {Hyderabad, India}
+
+\begin{itemize}
+    \item CGPA: 7.79/10
+    % \item Graduating in May 2022
+\end{itemize}
+
+
+
+
+
+% \begin{itemize}
+%   \item \textbf{JEE Mains} : 910\textsuperscript{th} out of 1.2 million students
+%   \vspace{1mm} %2mm vertical space
+%   \item \textbf{JEE Advanced} : 3310\textsuperscript{th} out of 155 thousand students
+%   \vspace{1mm} %2mm vertical space
+  
+% \end{itemize}
+
+  \vspace{1mm} %2mm vertical space
+
+    
+
+
+% \cvsection{Life Philosophy}
+% \begin{quote}
+% ``If you don't have any shadows, you're not standing in the light.''
+% \end{quote}
+
+
+% \cvsection{Positions}
+% \begin{itemize}
+%     \item\textbf{Teaching Assistant} : Teaching assistant for the course Real analysis for the Monsoon 2020 term.
+%     \item {}Member of the Apex mentor cell for the induction of newly enrolled students.
+% \end{itemize}
+ 
+
+\cvsection{Work Experience}
+\cvevent{Mayukh.ai Software Services}{Software Engineering Intern}{Jan 2020-Apr 2020 }{Hyderabad, India}
+\begin{itemize}
+  \item \textbf {} Worked in a 4-member team and developed an application for a smooth interface for money-lenders and borrowers.
+  \vspace{2mm} %2mm vertical space
+  \item \textbf {} Provided local language support.  
+  \vspace{2mm} %2mm vertical space
+  \item \textbf {}  Code developed in Java front using Android Studio.
+\end{itemize}
+
+\cvsection{RELEVANT COURSEWORK}
+
+\begin{itemize}
+  \item Computer Programming
+  \item Data Structures and Algorithms 
+  \item Design and Analysis of Software Systems 
+  \item Operating Systems  
+  \item Algorithm Analysis and Design
+  \item Data and Applications  
+  \item Data Analytics
+  \item Distributed Systems
+  \item Machine Data and Learning
+  \item Linear Algebra
+  \item Probability and Statistics
+  \vspace{2mm} %2mm vertical space
+\end{itemize}
+
+
+
+% \begin{itemize}
+%     \item \textbf{Programming and Scripting} : Bash, C, C++, Python, Javascript, Java.  
+%     \vspace{2mm} %2mm vertical space
+%     \item \textbf{Web and Databases} : React, Flask, MongoDB, MySQL,\\Firebase, HTML, CSS .
+%     \vspace{2mm} %2mm vertical space
+%     \item \textbf{Miscellaneous} : Linux, x86-Assembly, Git, LaTeX
+% \end{itemize}
+
+
+\cvsection{Skills}
+
+{\medium  \textbf{Programming Languages} }\\ \smallskip
+\cvtag{C}
+\cvtag{C++}
+\cvtag{Python}
+
+
+\divider\\
+
+{\medium \textbf{Web Development}}\\ \smallskip
+\cvtag{Javascript}
+\cvtag{HTML/CSS}
+\cvtag{MySQL}
+
+\divider\\
+
+{\medium \textbf{Other Technologies} }\\ \smallskip
+\cvtag{GNU/LINUX}
+\cvtag{Bash}
+\cvtag{Git}
+
+% \textbf{\cvevent{\href{https://github.com/bhavesh01shukla/genetic-algorithm}{Genetic Algorithm}}{}{}{}}
+% \begin{itemize}
+%     \item Implemented genetic algorithm for a given over-fit vector to make it optimally fit .
+%     \item Created a population with initial vector and alter it using mutation, crossover and different population selection techniques.
+%     \item \textbf{[Python]}
+% \end{itemize}
+
+% \divider
+
+\cvsection{Achievements}
+\begin{itemize}
+    \item AIR 910 in JEE MAINS among 13 Lakh students
+    \item AIR 3310 in JEE Advanced 2018 among 1.6 Lakh students.
+\end{itemize}
+
+
+
+\switchcolumn
+
+\cvsection{PROJECTS}
+
+
+\textbf{\cvevent{\href{https://github.com/bhavesh01shukla/Jetpack-Joyride/}{Jetpack-Joyride | Software Systems}}{}{}{}}
+    \begin{itemize}
+    % \item  Implemented a Command Line Interface version of the popular Jetpack Joyride game using Python.
+    
+    \item Created a replica of the popular game Jetpack Joyride in python from scratch, without using any additional libraries.
+    \item This terminal based game embeds all the properties of Object Oriented Programming (OOPs).
+    \item No external libraries such as PyGame were used. 
+    \item \textbf{[Python, OOPs]}
+\end{itemize}
+\divider
+
+\textbf{\cvevent{\href{https://github.com/bhavesh01shukla/C-Shell}{Linux Shell | Operating Systems}}{}{}{}}
+\begin{itemize}
+    \item Created a user-interactive shell in C from scratch.
+    \item It is a replica of the Bash Shell and supports the basic commands of the Linux CLI utilising Linux system calls.
+    \item The shell supports I/O redirection, piping, background/ foreground processes, and signal handling.
+    \item \textbf{[C, Operating Systems]}
+\end{itemize}
+\divider
+
+
+\textbf{\cvevent{\href{https://github.com/bhavesh01shukla/Web-App}{E-Commerce Platform | Software Systems}}{}{}{}}
+\begin{itemize}
+    \item  Developed a Full Stack Shopping Web App where vendors can host their products and customers can buy them & give reviews and ratings
+    \item \textbf{[Mern Stack]}
+\end{itemize}
+
+\divider
+
+
+\textbf{\cvevent{\href{https://github.com/bhavesh01shukla/Modified-XV-6}{Modifications to xv6 OS  | Operating Systems}}{}{}{}}
+\begin{itemize}
+    \item Modified MIT’s educational OS xv6 by implementing various standard scheduling algorithms like FCFS, PBS and Round Robin Format. 
+    \item Also implemented few system calls and modified kernel data structure to benchmark different algorithms to analyse performance.
+    \item Displayed information of running processes.
+    % \item Implemented MLFQ (Multi-level feedback queue) method of scheduling.
+    %  \item Fork of xv6 MIT used for assignment.
+     \item \textbf{[C, Operating Systems]}
+\end{itemize}
+ \divider
+ 
+
+
+\textbf{\cvevent{\href{https://github.com/bhavesh01shukla/Data-Applications}{Food delivery Management System | Databases}}{}{}{}}
+\begin{itemize}
+    \item Designed and developed a database system for a simple food delivery system.
+    \item \textbf{[MySQL, Python]}
+\end{itemize}
+
+\divider
+
+
+
+% \textbf{{\cvevent{\href{https://github.com/bhavesh01shukla/Web-App}{Bulk Purchase Web Application}}{}{}{}}}
+% \begin{itemize}
+%     \item Web application developed using the MERN stack and REST architectural principles that simulates an e-commerce website.
+%     \item Customers can buy, rate and review products. 
+%     \item Vendors can host their products and view reviews.
+%     % \item The web app facilitates the customers in bulk purchasing the products and providing reviews for the products bought.
+%     % \item The application provides an option for a customer to select available products.
+%     % \item Products were added to the cart for the customer and listed in stock from the supplier end.
+
+%     \item \textbf{[Technologies Used : MERN Stack, REST API]}
+% \end{itemize}
+% \divider
+
+
+
+% \cvsection{Positions held}
+
+% \cvevent{Teaching Assistant}{Course - Real Analysis}{Aug 2020-Nov 2020} {IIIT-H}
+% \begin{itemize}
+%     \item Conducted tutorials for students and corrected quizzes.
+% \end{itemize}
+
+
+
+
+
+% \cvevent{{Online Shopping DBMS}}{}{}{}
+% \begin{itemize}
+%     \item Created a relational database in \textbf{MySQL} and allowed users to query the database using an interface built in \textbf{Python}
+% \end{itemize}
+
+
+
+
+
+\end{paracol}
+
+\end{document}
